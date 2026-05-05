@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		620E0AD71D9E97BA0067F88B /* checkUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620E0AD61D9E97BA0067F88B /* checkUpdate.swift */; };
-		620E0B441D9F2F8F0067F88B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 620E0B431D9F2F8F0067F88B /* AppDelegate.m */; };
-		620E0B471D9F2F8F0067F88B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 620E0B461D9F2F8F0067F88B /* main.m */; };
 		620E0B491D9F2F8F0067F88B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620E0B481D9F2F8F0067F88B /* Assets.xcassets */; };
+		26E5E20500010000000A0002 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5E20500010000000A0001 /* AppDelegate.swift */; };
 		620E0B4C1D9F2F8F0067F88B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 620E0B4A1D9F2F8F0067F88B /* MainMenu.xib */; };
 		620E0B511D9F31E30067F88B /* cmd-eikana-helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 620E0B401D9F2F8F0067F88B /* cmd-eikana-helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		620E47771DB3C6E9004A2664 /* MappingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620E47761DB3C6E9004A2664 /* MappingMenu.swift */; };
@@ -56,9 +55,7 @@
 /* Begin PBXFileReference section */
 		620E0AD61D9E97BA0067F88B /* checkUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = checkUpdate.swift; sourceTree = "<group>"; };
 		620E0B401D9F2F8F0067F88B /* cmd-eikana-helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cmd-eikana-helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		620E0B421D9F2F8F0067F88B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		620E0B431D9F2F8F0067F88B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		620E0B461D9F2F8F0067F88B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26E5E20500010000000A0001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		620E0B481D9F2F8F0067F88B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		620E0B4B1D9F2F8F0067F88B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		620E0B4D1D9F2F8F0067F88B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,22 +112,12 @@
 		620E0B411D9F2F8F0067F88B /* cmd-eikana-helper */ = {
 			isa = PBXGroup;
 			children = (
-				620E0B421D9F2F8F0067F88B /* AppDelegate.h */,
-				620E0B431D9F2F8F0067F88B /* AppDelegate.m */,
+				26E5E20500010000000A0001 /* AppDelegate.swift */,
 				620E0B481D9F2F8F0067F88B /* Assets.xcassets */,
 				620E0B4A1D9F2F8F0067F88B /* MainMenu.xib */,
 				620E0B4D1D9F2F8F0067F88B /* Info.plist */,
-				620E0B451D9F2F8F0067F88B /* Supporting Files */,
 			);
 			path = "cmd-eikana-helper";
-			sourceTree = "<group>";
-		};
-		620E0B451D9F2F8F0067F88B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				620E0B461D9F2F8F0067F88B /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		6294280E1D387503001BD4E9 = {
@@ -322,8 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				620E0B471D9F2F8F0067F88B /* main.m in Sources */,
-				620E0B441D9F2F8F0067F88B /* AppDelegate.m in Sources */,
+				26E5E20500010000000A0002 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +391,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.dominion525.cmd-eikana-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -427,6 +414,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.dominion525.cmd-eikana-helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
